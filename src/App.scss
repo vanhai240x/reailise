@@ -10,10 +10,10 @@ $blackPrimary: #171514;
 
 $path: 0% 0, 80% 0, 100% 10%, 100% 100%, 20% 100%, 0 90%;
 ::selection {
-  background: #8fee66;
+  background: #ffd7a8;
 }
 body {
-  background: $blackPrimary;
+  background: $white;
   overflow-x: hidden;
   &.workDetails {
     background: $black;
@@ -87,7 +87,7 @@ main {
   //   position: absolute;
   //   transform-origin: center;
   //   animation: rotate 2s linear infinite;
-  //   background: linear-gradient(transparent, #97fc6b);
+  //   background: linear-gradient(transparent, #FFAC4B);
   //   animation: bg-spin 15s linear infinite;
   //   // backdrop-filter: blur(7.5px);
   //   border-radius: 80px;
@@ -124,7 +124,7 @@ main {
         display: block;
         width: 26px;
         height: 2px;
-        background: #97fc6b;
+        background: #FFAC4B;
         border-radius: 31px;
         transition: all 0.3s;
         &:not(:last-child) {
@@ -183,17 +183,17 @@ main {
         a {
           &:not(.btnPrimary) {
             display: flex;
-            font-family: "Gellix";
+            font-family: "Gellix Theorem";
             font-weight: 400;
             font-size: 16px;
             line-height: 29px;
-            color: $white;
-            transform: translateY(105%);
+            color: $black;
+            // transform: translateY(105%);
           }
           &.btnPrimary {
             display: inline-flex;
             transform-origin: center;
-            width: 0;
+            // width: 0;
             white-space: nowrap;
           }
         }
@@ -252,6 +252,7 @@ main {
     white-space: nowrap;
     font-weight: 500;
     font-size: 24px;
+    padding-top: 24px;
     @media screen and (max-width: 575px) {
       font-size: 15px;
     }
@@ -263,6 +264,7 @@ main {
     &:not(:last-child) {
       &.App-navigation-item--active {
         display: block;
+        color: $black;
       }
     }
   }
@@ -304,7 +306,7 @@ main {
   width: var(--size);
   height: var(--size);
   filter: blur(calc(var(--size) / 5));
-  background: linear-gradient(292.7deg, #97fc6b 14.54%, #97fc6b 84.59%);
+  background: linear-gradient(292.7deg, #FFAC4B 14.54%, #FFAC4B 84.59%);
   animation: rotate var(--speed) alternate infinite;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   opacity: 0.5;
@@ -327,7 +329,7 @@ main {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #8fee66;
+  background: #FFAC4B;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -408,9 +410,6 @@ main {
     }
   }
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     @media screen and (max-width: 1030px) {
       flex-direction: column;
       padding: 0;
@@ -430,7 +429,6 @@ main {
     display: flex;
     h1 {
       position: relative;
-      max-width: 708px;
       width: 100%;
       z-index: 2;
       @media screen and (max-width: 1030px) {
@@ -453,6 +451,7 @@ main {
       }
       .span-line-inner {
         display: inline-block;
+        color: $black;
       }
       // .span-mask{
       //   position: absolute;
@@ -467,7 +466,6 @@ main {
   }
   &__eye {
     position: relative;
-    width: 433px;
     height: 150px;
     padding-right: 120px;
     z-index: 20;
@@ -485,6 +483,7 @@ main {
     position: absolute;
     top: 20%;
     right: 100px;
+    display: none !important;
     @media screen and (max-width: 1030px) {
       position: relative;
       right: unset;
@@ -501,24 +500,70 @@ main {
   &__parallaxbox {
     position: absolute;
     right: 35px;
-    bottom: 32.5%;
-    max-width: 555px;
+    bottom: 38%;
     width: 100%;
     z-index: 20;
     @media screen and (max-width: 1030px) {
       position: relative;
       right: unset;
       bottom: unset;
-      order: 3;
       overflow: unset;
-      margin-top: -110px;
+      margin-top: -60px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &.tag_1 {
+      position: relative;
+      right: 0;
+      bottom: 0;
+      .heroBanner__textbox {
+        transform: rotate(15deg);
+        padding: 20px 30px 20px 50px;
+        right: auto;
+        left: -50px;
+        bottom: 100px;
+      }
+      @media screen and (max-width: 1030px) {
+        justify-content: flex-start;
+      }
+    }
+    &.tag_2 {
+      .heroBanner__textbox {
+        transform: rotate(-15deg);
+        padding: 20px 30px;
+        right: -27px;
+        left: auto;
+        bottom: 530px;
+      }
+      @media screen and (max-width: 1030px) {
+        justify-content: flex-end;
+        .heroBanner__textbox {
+          right: -54px;
+          bottom: 480px;
+        }
+      }
+    }
+    &.tag_3 {
+      .heroBanner__textbox {
+        transform: rotate(11.161deg);
+        padding: 20px 30px;
+        right: 21%;
+        left: auto;
+        bottom: 285px;
+      }
+      @media screen and (max-width: 1030px) {
+        justify-content: flex-end;
+        .heroBanner__textbox {
+          right: 5%;
+        }
+      }
     }
   }
   &__textbox {
     position: absolute;
     right: 0;
     bottom: 0;
-    max-width: 555px;
+    max-width: 450px;
     padding: 30px;
     // overflow: hidden;
     border-radius: 40px;
@@ -544,7 +589,7 @@ main {
       // position: absolute;
       // transform-origin: center;
       // animation: rotate 2s linear infinite;
-      // background: linear-gradient(transparent, #97fc6b);
+      // background: linear-gradient(transparent, #FFAC4B);
       // animation: bg-spin 15s linear infinite;
       // // backdrop-filter: blur(7.5px);
       // border-radius: 40px;
@@ -565,10 +610,10 @@ main {
       content: "";
       position: absolute;
       inset: 1px;
-      background: rgba(34, 32, 30, 0.3);
+      background: rgba(255, 255, 255, 0.30);
       backdrop-filter: blur(3.5px);
       border-radius: 40px;
-      // border: 1px solid rgba($color: #585653, $alpha: 0.4);
+      border: 0.5px solid #000;
       @media screen and (max-width: 575px) {
         border-radius: 30px;
       }
@@ -596,34 +641,39 @@ main {
       line-height: 30px;
       text-align: right;
       z-index: 2;
-      color: #ffffff;
+      color: $black;
       @media screen and (max-width: 575px) {
         font-size: 15px;
         line-height: 22px;
         text-align: left;
       }
     }
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   background: rgba(34, 32, 30, 0.3);
-    //   backdrop-filter: blur(3.5px);
-    //   border-radius: 40px;
-    // }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    p {
+      font-family: "Druk Cond Trial";
+      color: #000;
+      font-size: 112px;
+    }
+    @media screen and (max-width: 1030px) {
+      flex-direction: row !important;
+      width: 150%;
+      margin-left: -25%;
+      padding-bottom: 60px !important;
+    }
   }
 }
 
 .portfolio {
   position: relative;
-  background: $black;
   border-radius: 80px;
   z-index: 2;
   padding-bottom: 100px;
   margin-top: -100px;
+  background: $white;
   @media screen and (max-width: 1030px) {
     margin-top: 0;
     padding-top: 60px;
@@ -680,7 +730,7 @@ main {
             top: 50%;
             left: 50%;
             border-radius: 50%;
-            background: #97fc6b;
+            background: #FFAC4B;
             filter: blur(3px);
             transform: translate(-50%, -50%);
             opacity: 0;
@@ -689,7 +739,7 @@ main {
             margin-right: 8px;
           }
           &.swiper-pagination-bullet-active {
-            background: #8fee66;
+            background: #ffd7a8;
             &::before {
               opacity: 1;
             }
@@ -790,7 +840,7 @@ main {
             left: -10px;
             top: 50%;
             transform: translateY(-50%);
-            background: #97fc6b;
+            background: #FFAC4B;
             opacity: 0;
           }
           &.active {
@@ -883,19 +933,19 @@ main {
       height: 103px;
       top: 50%;
       left: 50px;
-      background: linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-        linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-        linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-        linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%);
+      background: linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+        linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+        linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+        linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%);
       z-index: 11;
       transform: translateY(-50%);
       @media screen and (max-width: 575px) {
         width: 281px;
         height: 103px;
-        background: linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-          linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-          linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-          linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%);
+        background: linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+          linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+          linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+          linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%);
         left: -150px;
         top: 50%;
       }
@@ -907,18 +957,18 @@ main {
       height: 103px;
       top: 50%;
       right: -116px;
-      background: linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-        linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-        linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-        linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%);
+      background: linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+        linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+        linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+        linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%);
       // opacity: 0.6;
       z-index: 11;
       transform: translateY(-50%) rotate(-180deg);
       @media screen and (max-width: 575px) {
-        background: linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-          linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-          linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%),
-          linear-gradient(89.84deg, #000000 0.11%, rgba(0, 0, 0, 0) 92.49%);
+        background: linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+          linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+          linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%),
+          linear-gradient(89.84deg, #ffffff 0.11%, rgba(0, 0, 0, 0) 92.49%);
         transform: rotate(-180deg);
         width: 263px;
         right: -150px;
@@ -989,7 +1039,7 @@ main {
   color: rgba(129, 129, 129, 1);
   cursor: pointer;
   padding-left: 15px;
-  font-family: "Gellix";
+  font-family: "Gellix Theorem";
   font-weight: 500;
   font-size: 24px;
   line-height: 47px;
@@ -1047,7 +1097,7 @@ main {
     left: -10px;
     top: 50%;
     transform: translateY(-50%);
-    background: #97fc6b;
+    background: #FFAC4B;
     opacity: 0;
     transition: all 0.3s;
   }
@@ -1060,7 +1110,7 @@ main {
     left: -10.5px;
     top: 50%;
     transform: translateY(-50%);
-    background: #97fc6b;
+    background: #FFAC4B;
     filter: blur(3px);
     opacity: 0;
     transition: all 0.3s;
@@ -1071,7 +1121,7 @@ main {
   span {
     &::before,
     &::after {
-      color: #ffffff;
+      color: $black;
     }
   }
   &::before,
@@ -1194,9 +1244,10 @@ main {
 }
 .service {
   position: relative;
-  padding: 230px 0;
-  margin-top: 190px;
+  margin-top: -100px;
+  padding: 170px 0;
   overflow: hidden;
+  background: linear-gradient(180deg, #E5E5E5 0%, rgba(217, 217, 217, 0.00) 100%);
   @media screen and (max-width: 1030px) {
     margin-top: 0;
     padding: 100px 0 300px;
@@ -1251,6 +1302,7 @@ main {
         font-size: 189px;
         line-height: 180px;
         white-space: nowrap;
+        color: $black;
         @media screen and (max-width: 1025px) {
           font-size: 115px;
         }
@@ -1272,7 +1324,6 @@ main {
     }
   }
   &__textbox {
-    position: absolute;
     max-width: 700px;
     width: 100%;
     left: 0;
@@ -1321,7 +1372,7 @@ main {
     //   position: absolute;
     //   transform-origin: center;
     //   animation: rotate 2s linear infinite;
-    //   background: linear-gradient(transparent, #97fc6b);
+    //   background: linear-gradient(transparent, #FFAC4B);
     //   animation: bg-spin 15s linear infinite;
     //   border-top-right-radius: 160px;
     //   border-bottom-right-radius: 160px;
@@ -1335,12 +1386,11 @@ main {
       left: 0;
       position: absolute;
       opacity: 1;
-      background: rgba(34, 32, 30, 0.7);
       backdrop-filter: blur(7.5px);
-      // border: 1px solid rgba(88, 86, 83, 0.6);
-      border-left: 0;
+      background: rgba(255, 255, 255, 0.70);
       border-top-right-radius: 160px;
       border-bottom-right-radius: 160px;
+      border: 0.5px solid #000;
       @media screen and (max-width: 575px) {
         background: rgba(34, 32, 30, 0.3);
         backdrop-filter: blur(3.5px);
@@ -1368,7 +1418,7 @@ main {
       font-size: 18px;
       line-height: 30px;
       max-width: 580px;
-      color: white;
+      color: $black;
       z-index: 2;
       @media screen and (max-width: 575px) {
         font-size: 15px;
@@ -1385,7 +1435,7 @@ main {
   max-width: 1370px;
   width: 100%;
   margin: 0 auto;
-  padding: 300px 30px;
+  padding: 300px 30px 100px;
   display: flex;
   justify-content: flex-end;
   @media screen and (max-width: 1440px) {
@@ -1402,7 +1452,7 @@ main {
       font-weight: 500;
       font-size: 24px;
       line-height: 29px;
-      color: white;
+      color: $black;
       margin-bottom: 20px;
       display: none;
       @media screen and (max-width: 768px) {
@@ -1412,7 +1462,6 @@ main {
     &--title {
       font-size: 62px;
       line-height: 75px;
-      color: $white;
       @media screen and (max-width: 575px) {
         font-weight: 500;
         font-size: 42px;
@@ -1424,8 +1473,8 @@ main {
           position: absolute;
           top: 0;
           right: 0;
-          background-color: #181818;
-          opacity: 0.6;
+          background-color: #fff;
+          opacity: 1;
           height: 100%;
           width: 100%;
         }
@@ -1434,11 +1483,11 @@ main {
   }
 }
 .workwithus {
-  background: $black;
   padding-top: 0;
   z-index: 20;
   max-width: 100%;
   width: 100%;
+  margin-bottom: 350px;
   &__inner {
     max-width: 1370px;
     width: 100%;
@@ -1446,7 +1495,7 @@ main {
     display: flex;
     justify-content: flex-end;
     .mask {
-      background: $black !important;
+      // background: $black !important;
     }
   }
   @media screen and (max-width: 575px) {
@@ -1464,7 +1513,7 @@ main {
 }
 .ouroffers {
   position: relative;
-  padding: 300px 30px 250px;
+  padding: 0 30px 250px;
   @media screen and (max-width: 1030px) {
     padding: 200px 30px 250px;
   }
@@ -1480,7 +1529,7 @@ main {
     width: var(--size);
     height: var(--size);
     filter: blur(calc(var(--size) / 5));
-    background: linear-gradient(292.7deg, #97fc6b 14.54%, #97fc6b 84.59%);
+    background: linear-gradient(292.7deg, #FFAC4B 14.54%, #FFAC4B 84.59%);
     animation: rotate var(--speed) alternate infinite;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     opacity: 0.5;
@@ -1704,13 +1753,13 @@ main {
         top: 50%;
         left: 50%;
         border-radius: 50%;
-        background: #97fc6b;
+        background: #FFAC4B;
         filter: blur(3px);
         transform: translate(-50%, -50%);
         opacity: 0;
       }
       &.swiper-pagination-bullet-active {
-        background: #8fee66;
+        background: #ffd7a8;
         &::before {
           opacity: 1;
         }
@@ -1721,7 +1770,7 @@ main {
 
 .offerBlocks {
   position: relative;
-  padding: 350px 0 0;
+  padding: 250px 0 0;
   @media screen and (max-width: 575px) {
     padding: 100px 0 0;
     margin-left: -20px;
@@ -1741,77 +1790,86 @@ main {
   }
   &__item {
     position: absolute;
-    padding: 0 80px 0 25px;
-    font-family: "Gellix";
+    padding: 0 40px;
+    font-family: "Gellix Theorem";
     font-weight: 500;
-    font-size: 24px;
-    line-height: 61px;
-    background: linear-gradient(180deg, #bababa 54.14%, rgba(255, 255, 255, 0) 69.43%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    border: 1px solid rgba($color: $white, $alpha: 0.6);
+    font-size: 18px;
+    line-height: 67px;
     border-radius: 60px;
+    border: 0.5px solid #000;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(3.5px);
     &.item1 {
       top: 0;
-      left: 30%;
+      left: 12%;
+      transform: rotate(-30deg) !important;
+      z-index: 3;
     }
     &.item2 {
-      top: 15%;
-      left: 25%;
+      top: -8%;
+      left: 28%;
+      z-index: 2;
     }
     &.item3 {
-      top: 10%;
-      left: 47%;
+      top: 5%;
+      left: 30%;
+      transform: rotate(-15deg) !important;
     }
     &.item4 {
-      top: 35%;
-      left: 0;
+      top: 8%;
+      left: 44%;
+      z-index: 2;
     }
     &.item5 {
-      top: 25%;
-      left: 10%;
+      top: 2%;
+      right: 15%;
+      transform: rotate(11.161deg) !important;
     }
     &.item6 {
-      top: 37%;
+      top: 26%;
       left: 30%;
+      z-index: 3;
     }
     &.item7 {
-      top: 26%;
-      left: 44%;
+      top: 24%;
+      left: 47%;
+      transform: rotate(6.9deg) !important;
+      z-index: 2;
     }
     &.item8 {
-      top: 20%;
-      left: 64%;
+      top: 31%;
+      left: 70%;
+      transform: rotate(15deg) !important;
+      z-index: 1;
     }
     &.item9 {
-      top: 35%;
-      right: 5%;
+      top: 30%;
+      right: 1%;
+      transform: rotate(30deg) !important;
+      z-index: 0;
     }
     &.item10 {
-      top: 47%;
-      left: 15%;
+      top: 44%;
+      left: 9%;
+      transform: rotate(-15deg) !important;
+      z-index: 7;
     }
     &.item11 {
-      top: 55%;
-      left: 37%;
-    }
-    &.item11 {
-      top: 55%;
-      right: 15%;
+      top: 46%;
+      left: 38%;
+      transform: rotate(-8.07deg) !important;
     }
     &.item12 {
-      top: 63%;
-      right: 10%;
+      top: 40%;
+      right: 25%;
+      transform: rotate(45deg) !important;
+      z-index: 1;
     }
     &.item13 {
-      top: 72%;
-      right: 20%;
-    }
-    &.item14 {
-      top: 65%;
-      left: 12%;
+      top: 53%;
+      right: 12%;
+      transform: rotate(-13.531deg) !important;
+      z-index: 2;
     }
     @media screen and (max-width: 575px) {
       position: relative;
@@ -1855,7 +1913,7 @@ main {
 .whyus {
   position: relative;
   padding: 170px 0 0;
-  background: $black;
+  background: $white;
   border-radius: 80px;
   padding-left: 40vw;
   overflow: hidden;
@@ -1866,11 +1924,14 @@ main {
   }
   &__heading {
     position: absolute;
-    max-width: 470px;
+    max-width: 500px;
     width: 100%;
     top: 50%;
     left: 30px;
     transform: translateY(-50%);
+    .split-text {
+      color: $black;
+    }
     h4 {
       display: none;
       @media screen and (max-width: 575px) {
@@ -1905,6 +1966,7 @@ main {
       left: unset;
       transform: translate(0);
       margin-bottom: 60px;
+      top: 8%;
     }
   }
   &__row {
@@ -1961,7 +2023,10 @@ main {
     }
     &--icon {
       position: relative;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
+      @media screen and (max-width: 1030px) {
+        transform: none !important;
+      }
       @media screen and (max-width: 575px) {
         display: flex;
         width: 100%;
@@ -1980,7 +2045,7 @@ main {
       position: relative;
       display: flex;
       justify-content: space-between;
-      height: calc(100% - 144px);
+      height: calc(100% - 200px);
       @media screen and (max-width: 1030px) {
         height: auto;
         display: block;
@@ -2006,13 +2071,13 @@ main {
         font-weight: 500;
         font-size: 32px;
         line-height: 41px;
-        color: $white;
+        color: $black;
         margin-bottom: 20vh;
+        white-space: nowrap;
 
         @media screen and (max-width: 1030px) {
           margin-bottom: 20px;
           transform: translateY(30%);
-          opacity: 0;
         }
         @media screen and (max-width: 575px) {
           font-weight: 500;
@@ -2029,7 +2094,6 @@ main {
         @media screen and (max-width: 1030px) {
           margin-bottom: 20px;
           transform: translateY(30%);
-          opacity: 0;
         }
         @media screen and (max-width: 575px) {
           font-weight: 500;
@@ -2053,7 +2117,7 @@ main {
         font-weight: 200;
         font-size: 1vw;
         line-height: 1.55vw;
-        color: $white;
+        color: $black;
 
         &:not(:last-child) {
           margin-bottom: 20px;
@@ -2062,7 +2126,6 @@ main {
           font-size: 15px;
           line-height: 22px;
           transform: translateY(30%);
-          opacity: 0;
         }
       }
     }
@@ -2073,7 +2136,7 @@ main {
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(34, 32, 30, 0.59);
+      background: rgba(231, 231, 231, 0.59);
       backdrop-filter: blur(9.5px);
       border-radius: 110px;
       @media screen and (max-width: 1030px) {
@@ -2095,18 +2158,19 @@ main {
   &__top {
     position: relative;
     padding: 350px 0 0;
-    background: #97fc6a;
+    background: #FFAC4B;
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
     z-index: 2;
     @media screen and (max-width: 1030px) {
       padding: 200px 0 0;
+      margin-bottom: -57px;
     }
     @media screen and (max-width: 575px) {
       padding: 100px 0 0;
       border-bottom-left-radius: 30px;
       border-bottom-right-radius: 30px;
-      background: #97fc6a;
+      background: #FFAC4B;
     }
   }
   &__contactinfo {
@@ -2184,6 +2248,7 @@ main {
         line-height: 30px;
         color: $black;
         text-align: right;
+        white-space: nowrap;
         @media screen and (max-width: 575px) {
           text-align: left;
         }
@@ -2204,7 +2269,6 @@ main {
     display: flex;
     justify-content: center;
     img {
-      margin-bottom: -12px;
       width: calc(100% - 80px);
       @media screen and (max-width: 575px) {
         margin-bottom: -2px;
@@ -2235,7 +2299,6 @@ main {
 
 .portfolioinner {
   position: relative;
-  background: $black;
   .offergradient,
   .offergradient2,
   .offergradient3 {
@@ -2246,7 +2309,7 @@ main {
     width: var(--size);
     height: var(--size);
     filter: blur(calc(var(--size) / 5));
-    background: linear-gradient(292.7deg, #97fc6b 14.54%, #97fc6b 84.59%);
+    background: linear-gradient(292.7deg, #FFAC4B 14.54%, #FFAC4B 84.59%);
     animation: rotate var(--speed) alternate infinite;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     opacity: 0.5;
@@ -2563,7 +2626,6 @@ main {
 }
 .innerbg {
   position: relative;
-  background: $black;
   z-index: 2;
   .container {
     @media screen and (min-width: 1030px) {
@@ -2583,7 +2645,7 @@ main {
     align-items: center;
     justify-content: space-between;
     a {
-      font-family: "Gellix";
+      font-family: "Gellix Theorem";
       font-weight: 400;
       font-size: 16px;
       line-height: 36px;

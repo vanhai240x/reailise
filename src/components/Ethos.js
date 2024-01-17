@@ -35,23 +35,31 @@ const Ethos = () => {
         <div className="ethos" id='ethos'>
             <div className="ethos__content">
                 <h4 className="ethos__content--mobiletitle">
-                    our ethos
+                    my ethos
                 </h4>
                 <div className='ethos__content--title' id='target' ref={splttext}>
                     <div className="line">
-                        We constantly challenge the status
+                        I consistently question the
                         <div className="mask" ref={mask}></div>
                     </div>
                     <div className="line">
-                        quo and shape industry-redefining
+                        established norms and craft
                         <div className="mask" ref={mask}></div>
                     </div>
                     <div className="line">
-                        solutions in a tight-knit
+                        groundbreaking solutions that
                         <div className="mask" ref={mask}></div>
                     </div>
                     <div className="line">
-                        collaboration with our customers.
+                        redefine industry standards, all
+                        <div className="mask" ref={mask}></div>
+                    </div>
+                    <div className="line">
+                        achieved through close
+                        <div className="mask" ref={mask}></div>
+                    </div>
+                    <div className="line">
+                        collaboration with my clients.
                         <div className="mask" ref={mask}></div>
                     </div>
                 </div>

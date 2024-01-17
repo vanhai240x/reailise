@@ -26,11 +26,11 @@ const Home = () => {
         <div>
             <nav className="subnav">
                 <span className={activeSection === 0 ? "App-navigation-item App-navigation-item--active" : "App-navigation-item"}></span>
-                <span className={activeSection === 1 ? "App-navigation-item App-navigation-item--active" : "App-navigation-item"}>our potential</span>
+                <span className={activeSection === 1 ? "App-navigation-item App-navigation-item--active" : "App-navigation-item"}>my potential</span>
                 <span className={activeSection === 2 ? "App-navigation-item App-navigation-item--active" : "App-navigation-item"}></span>
-                <span className={activeSection === 3 ? "App-navigation-item App-navigation-item--active" : "App-navigation-item"}>our ethos</span>
-                <span className={activeSection === 4 ? "App-navigation-item App-navigation-item--active" : "App-navigation-item"}>our offer</span>
-                <span className={activeSection === 5 ? "App-navigation-item App-navigation-item--active" : "App-navigation-item"}>why we’re the one</span>
+                <span className={activeSection === 3 ? "App-navigation-item App-navigation-item--active" : "App-navigation-item"}>my ethos</span>
+                <span className={activeSection === 4 ? "App-navigation-item App-navigation-item--active" : "App-navigation-item"}></span>
+                <span className={activeSection === 5 ? "App-navigation-item App-navigation-item--active" : "App-navigation-item"}>why I’m the one</span>
                 <span className={activeSection === 6 ? "App-navigation-item App-navigation-item--active" : "App-navigation-item"}></span>
             </nav>
             <div ref={sectionRefs[0]}>

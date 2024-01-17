@@ -1,7 +1,13 @@
 // Font import
 @font-face {
-  font-family: "Gellix";
-  src: url("../fonts/Gellix-Regular.ttf") format("truetype");
+  font-family: "Gellix Theorem";
+  src: url("../fonts/GellixTheorem-Medium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Druk Cond Trial";
+  src: url("../fonts/DrukCond-Super-Trial.otf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -18,7 +24,7 @@
   font-style: normal;
 }
 body {
-  font-family: "Gellix";
+  font-family: "Gellix Theorem";
   font-weight: 500;
 }
 h1,
@@ -27,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Gellix";
+  font-family: "Gellix Theorem";
 }
 button,
 a,
@@ -49,7 +55,6 @@ p {
 h1 {
   font-size: 112px;
   line-height: 126px;
-  color: #fff;
   &.big {
     font-weight: 500;
     font-size: 189px;
@@ -76,7 +81,6 @@ h2 {
   font-weight: 400;
   font-size: 62px;
   line-height: 69px;
-  color: #ffffff;
   @media screen and (max-width: 1025px) {
     font-size: 50px;
     line-height: 56px;

@@ -111,12 +111,7 @@ const Header = () => {
                 <nav className={"header__nav " + (mobilemode ? "show" : "")}>
                     <ul className="header__nav--menu">
                         <li className="header__nav--menu--item">
-                            <Link to='/portfolio' className="link" data-title="Portfolio" ref={headernav}>
-                                Portfolio
-                            </Link>
-                        </li>
-                        <li className="header__nav--menu--item">
-                            <Link className="btnPrimary" data-title="Let’s talk" ref={headerbtn}
+                            <Link className="link" data-title="Let’s talk" ref={headerbtn}
                                 to='#'
                                 onClick={(e) => {
                                     window.location.href = 'mailto:rebecca@reailise.com ';
@@ -124,6 +119,11 @@ const Header = () => {
                                 }}
                             >
                                 Let’s talk
+                            </Link>
+                        </li>
+                        <li className="header__nav--menu--item">
+                            <Link to='/portfolio' className="btnPrimary" data-title="Portfolio" ref={headernav}>
+                                Portfolio
                             </Link>
                         </li>
                         {/* <li className="header__nav--menu--item">

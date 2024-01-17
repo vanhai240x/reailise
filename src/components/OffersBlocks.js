@@ -62,85 +62,69 @@ const OffersBlocks = () => {
             <div className="offerBlocks__wrapper">
                 <div className="offerBlocks__item item1">
                     <h4>
-                        Name Design
+                        Design Systems
                     </h4>
                 </div>
                 <div className="offerBlocks__item item2">
                     <h4>
-                        Design Sysytems
+                        Creative Direction
                     </h4>
                 </div>
                 <div className="offerBlocks__item item3">
                     <h4>
-                        UI + UX Design
+                        Name Design
                     </h4>
                 </div>
                 <div className="offerBlocks__item item4">
                     <h4>
-                        3D Design
+                        Hands on UI & UX Design
                     </h4>
                 </div>
                 <div className="offerBlocks__item item5">
                     <h4>
-                        Brand Strategy
+                        Nomad enthusiast 
                     </h4>
                 </div>
                 <div className="offerBlocks__item item6">
                     <h4>
-                        Brand Tone Of Voice
+                        Brand Strategy
                     </h4>
                 </div>
                 <div className="offerBlocks__item item7">
                     <h4>
-                        Web Development
+                        Developer Management
                     </h4>
                 </div>
                 <div className="offerBlocks__item item8">
                     <h4>
-                        Product Design
+                        Designer Inspirer
                     </h4>
                 </div>
                 <div className="offerBlocks__item item9">
                     <h4>
-                        Product Development
+                        Team Leader
                     </h4>
                 </div>
                 <div className="offerBlocks__item item10">
                     <h4>
-                        Analysis + Review
+                        3D Design Concepts & Management
                     </h4>
                 </div>
                 <div className="offerBlocks__item item11">
                     <h4>
-                        Motion + Interaction Design
+                        Brand Tone Of Voice
                     </h4>
                 </div>
                 <div className="offerBlocks__item item12">
                     <h4>
-                        Illustration
+                        Product Design
                     </h4>
                 </div>
                 <div className="offerBlocks__item item13">
                     <h4>
-                        Custom Code
+                        Motion & Interaction Direction
                     </h4>
                 </div>
-                <div className="offerBlocks__item item14">
-                    <h4>
-                        CMS Integration
-                    </h4>
-                </div>
-            </div>
-            <div className="offerBlocks__cta">
-                <Link className='btntrans' data-title='Contact us'
-                    to='#'
-                    onClick={(e) => {
-                        window.location.href = 'mailto:rebecca@reailise.com ';
-                        e.preventDefault();
-                    }}
-                >
-                    Contact us
-                </Link>
             </div>
             <div className="offerBlocks__mobile">
                 <svg width="390" height="301" viewBox="0 0 390 301" fill="none" xmlns="http://www.w3.org/2000/svg">

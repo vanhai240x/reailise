@@ -118,7 +118,7 @@ const Hero = () => {
                     <div className="container">
                         <div className="heroBanner__heading">
                             <h1 className='span-lines' ref={spanword}>
-                                We transform brands, web & product experiences to the next level
+                                Award winning<br/>Creative Direction<br/>& Visual Design
                             </h1>
                         </div>
                         <div className="heroBanner__right">
@@ -132,27 +132,33 @@ const Hero = () => {
             </Parallax>
             <Parallax speed={5} className='heroBanner__parallaxbox'>
                 <div className="heroBanner__textbox">
-                    <span className="border">
-                        <svg width="553" height="213" preserveAspectRatio='none' viewBox="0 0 553 213" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="0.5" width="552" height="212" rx="39.5" fill="#22201E" fill-opacity="0.3" stroke="url(#paint0_linear_742_813)" />
-                            <defs>
-                                <linearGradient id="paint0_linear_742_813" x1="417.069" y1="0.0012801" x2="97.7747" y2="19.092" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#585653" />
-                                    <stop offset="0.767226" stop-color="#47413A" />
-                                    <stop offset="0.844475" stop-color="#97FC6A" />
-                                    <stop offset="0.900271" stop-color="#93A58B" stop-opacity="0.641243" />
-                                    <stop offset="1" stop-color="white" stop-opacity="0" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </span>
-                    <button>
-                        +
-                    </button>
                     <p>
-                        We output tailor-made web & mobile experiences. Using the imaginative application of design
-                        and data we create groundbreaking AI & Blockchain products, brands and websites.
+                        A tech & ai enthusiast that is obsessed with creating beautiful aesthetics that not only look good,
+                        but serve a purpose and drive real value to people A true team leader, I’ve been known to inspire
+                        others into creating their best work yet, with aiming to win awards with what we do, always.
                     </p>
+                </div>
+            </Parallax>
+            <Parallax speed={5} className='heroBanner__parallaxbox tag_1'>
+                <div className="heroBanner__textbox">
+                    <p>Tech lover</p>
+                </div>
+            </Parallax>
+            <Parallax speed={5} className='heroBanner__parallaxbox tag_1 tag_2'>
+                <div className="heroBanner__textbox">
+                    <p>Not scared to get my hands dirty</p>
+                </div>
+            </Parallax>
+            <Parallax speed={5} className='heroBanner__parallaxbox tag_1 tag_3'>
+                <div className="heroBanner__textbox">
+                    <p>Nomad enthusiast</p>
+                </div>
+            </Parallax>
+            <Parallax speed={5}>
+                <div className="container heroBanner__footer">
+                    <p>BRAND</p>
+                    <p>WEB</p>
+                    <p>PRODUCT</p>
                 </div>
             </Parallax>
         </div>

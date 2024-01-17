@@ -51,7 +51,7 @@ ul {
   overflow: hidden;
   cursor: pointer;
   &:hover {
-    // background: #97fc6b;
+    // background: #FFAC4B;
     // color: #000000;
   }
   &::before {
@@ -74,7 +74,7 @@ ul {
     display: flex;
     align-items: center;
     height: 100%;
-    background: #97fc6b;
+    background: #FFAC4B;
     color: #000000;
     content: attr(data-title);
     justify-content: center;
@@ -86,7 +86,7 @@ ul {
     transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   }
   &:hover {
-    border-color: #97fc6b;
+    border-color: #FFAC4B;
     &::before {
       transform: translateY(100%);
     }
@@ -111,7 +111,7 @@ ul {
   border-radius: 23px;
   transition: 0.3s ease-in-out;
   overflow: hidden;
-  border: 1px solid white;
+  border: 1px solid #000000;
   border-radius: 40px;
   &::before {
     position: absolute;
@@ -122,7 +122,7 @@ ul {
     top: 50%;
     transform: translate(-50%, -50%) skewY(0);
     z-index: 1;
-    color: #ffffff;
+    color: #000000;
     display: flex;
     transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
@@ -130,7 +130,7 @@ ul {
     display: flex;
     align-items: center;
     height: 100%;
-    background: #97fc6b;
+    background: #FFAC4B;
     color: #000000;
     content: attr(data-title);
     justify-content: center;
@@ -142,7 +142,7 @@ ul {
     transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   }
   &:hover {
-    border-color: #97fc6b;
+    border-color: #FFAC4B;
     &::before {
       transform: translateY(100%);
     }
@@ -182,7 +182,7 @@ ul {
     top: 50%;
     transform: translate(-50%, -50%) skewY(0);
     z-index: 1;
-    color: #ffffff;
+    color: #000;
     display: flex;
     transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
@@ -195,7 +195,7 @@ ul {
     top: 50%;
     transform: translate(-50%, 35%) skewY(-15deg);
     z-index: 1;
-    color: #ffffff;
+    color: #000;
     display: flex;
     transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
@@ -260,7 +260,7 @@ ul {
     font-weight: 400;
     font-size: 17px;
     line-height: 26px;
-    color: #ffffff;
+    color: #000000;
     @media screen and (max-width: 575px) {
       line-height: 26px;
     }

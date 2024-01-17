@@ -186,40 +186,14 @@ const WhyUs = () => {
     <div className='whyus' id='whyus'>
       <div className="whyus__heading" ref={whyusheading}>
         <h4 className='split-text'>
-          why we’re the one
+          why I’m the one
         </h4>
         <h2 className='split-text'>
-          Why are we not <br /> the average <br /> creative studio?
+          Why I’m not the <br /> average Creative <br /> Director? My <br/> multidisciplinary <br/> background
         </h2>
       </div>
       <div className="whyus__row" ref={whyusrow}>
         <div className="whyus__col" ref={whyuscol}>
-          <span className="border">
-            <svg className='desktop' width="1018" height="869" preserveAspectRatio='none' viewBox="0 0 1018 869" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.5" y="0.5" width="1017" height="868" rx="109.5" fill="#22201E" fill-opacity="0.59" stroke="url(#paint0_linear_742_1295)" />
-              <defs>
-                <linearGradient id="paint0_linear_742_1295" x1="767.77" y1="0.00522256" x2="178.318" y2="15.9076" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#585653" />
-                  <stop offset="0.767226" stop-color="#47413A" />
-                  <stop offset="0.844475" stop-color="#97FC6A" />
-                  <stop offset="0.900271" stop-color="#93A58B" stop-opacity="0.641243" />
-                  <stop offset="1" stop-color="white" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <svg className='mobile' width="357" height="593" preserveAspectRatio='none' viewBox="0 0 357 593" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.5" y="0.5" width="356" height="592" rx="13.5" fill="#22201E" fill-opacity="0.3" stroke="url(#paint0_linear_994_19731)" />
-              <defs>
-                <linearGradient id="paint0_linear_994_19731" x1="117.868" y1="-24.4289" x2="321.184" y2="685.855" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#8E8E8E" />
-                  <stop offset="0.287753" stop-color="#646464" stop-opacity="0.859656" />
-                  <stop offset="0.447332" stop-color="white" stop-opacity="0.762345" />
-                  <stop offset="0.583254" stop-color="#868686" stop-opacity="0.659271" />
-                  <stop offset="1" stop-color="#7C7C7C" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
           <div className="whyus__col--icon" ref={icon1}>
             <img src={techicon} alt="" />
           </div>
@@ -227,7 +201,7 @@ const WhyUs = () => {
             <div className="whyus__col--left">
               <div className="whyus__col--left--heading">
                 <h3>
-                  We specialise in deep tech
+                  Multidisciplinary Queen
                 </h3>
               </div>
               <div className="whyus__col--left--number">
@@ -238,39 +212,13 @@ const WhyUs = () => {
             </div>
             <div className="whyus__col--text">
               <p>
-                We thrive in complexity and are problem-solvers at our core. No subject matter is too tricky for us to wrap our heads around. We love to work with game-changing, industry defining products that often involve ai, algorithms and deep technical knowledge.
+                As a genuine craft designer, my expertise stems from a pixel-perfect foundation in digital design. I have a broad range of experience, spanning creative pitches, intricate product design, and comprehensive 360-degree development in branding, web, and product. I’m great at brand strategy, and able to create a brand from scratch that truly aligns with the values of a company.
               </p>
             </div>
 
           </div>
         </div>
         <div className="whyus__col" ref={whyuscol}>
-          <span className="border">
-            <svg className='desktop' width="1018" height="869" preserveAspectRatio='none' viewBox="0 0 1018 869" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.5" y="0.5" width="1017" height="868" rx="109.5" fill="#22201E" fill-opacity="0.59" stroke="url(#paint0_linear_742_1295)" />
-              <defs>
-                <linearGradient id="paint0_linear_742_1295" x1="767.77" y1="0.00522256" x2="178.318" y2="15.9076" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#585653" />
-                  <stop offset="0.767226" stop-color="#47413A" />
-                  <stop offset="0.844475" stop-color="#97FC6A" />
-                  <stop offset="0.900271" stop-color="#93A58B" stop-opacity="0.641243" />
-                  <stop offset="1" stop-color="white" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <svg className='mobile' width="357" height="593" preserveAspectRatio='none' viewBox="0 0 357 593" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.5" y="0.5" width="356" height="592" rx="13.5" fill="#22201E" fill-opacity="0.3" stroke="url(#paint0_linear_994_19731)" />
-              <defs>
-                <linearGradient id="paint0_linear_994_19731" x1="117.868" y1="-24.4289" x2="321.184" y2="685.855" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#8E8E8E" />
-                  <stop offset="0.287753" stop-color="#646464" stop-opacity="0.859656" />
-                  <stop offset="0.447332" stop-color="white" stop-opacity="0.762345" />
-                  <stop offset="0.583254" stop-color="#868686" stop-opacity="0.659271" />
-                  <stop offset="1" stop-color="#7C7C7C" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
           <div className="whyus__col--icon" ref={icon2}>
             <img src={globeicon} alt="" />
           </div>
@@ -278,7 +226,7 @@ const WhyUs = () => {
             <div className="whyus__col--left">
               <div className="whyus__col--left--heading">
                 <h3>
-                  We are partners
+                  I’m your partner, not just a “freelancer”
                 </h3>
               </div>
               <div className="whyus__col--left--number">
@@ -289,40 +237,13 @@ const WhyUs = () => {
             </div>
             <div className="whyus__col--text">
               <p>
-                We work with clients and products that we truly believe will be game-changing and industry defining. We see ourselves as partners, not just vendors, which means we get to know you, your business and your vision.
+                I work with clients and products that I truly resonate with. I see myself as partner, not just vendor, which means I get to know you, your business and your vision. This tailored approach allows me to create solutions aligned with your needs, fostering collaboration for our shared success.
               </p>
             </div>
 
           </div>
         </div>
         <div className="whyus__col" ref={whyuscol}>
-          <span className="border">
-            <svg className='desktop' width="1018" height="869" preserveAspectRatio='none' viewBox="0 0 1018 869" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.5" y="0.5" width="1017" height="868" rx="109.5" fill="#22201E" fill-opacity="0.59" stroke="url(#paint0_linear_742_1295)" />
-              <defs>
-                <linearGradient id="paint0_linear_742_1295" x1="767.77" y1="0.00522256" x2="178.318" y2="15.9076" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#585653" />
-                  <stop offset="0.767226" stop-color="#47413A" />
-                  <stop offset="0.844475" stop-color="#97FC6A" />
-                  <stop offset="0.900271" stop-color="#93A58B" stop-opacity="0.641243" />
-                  <stop offset="1" stop-color="white" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <svg className='mobile' width="357" height="593" preserveAspectRatio='none' viewBox="0 0 357 593" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.5" y="0.5" width="356" height="592" rx="13.5" fill="#22201E" fill-opacity="0.3" stroke="url(#paint0_linear_994_19731)" />
-              <defs>
-                <linearGradient id="paint0_linear_994_19731" x1="117.868" y1="-24.4289" x2="321.184" y2="685.855" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#8E8E8E" />
-                  <stop offset="0.287753" stop-color="#646464" stop-opacity="0.859656" />
-                  <stop offset="0.447332" stop-color="white" stop-opacity="0.762345" />
-                  <stop offset="0.583254" stop-color="#868686" stop-opacity="0.659271" />
-                  <stop offset="1" stop-color="#7C7C7C" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-            </svg>
-
-          </span>
           <div className="whyus__col--icon" ref={icon3}>
             <img src={trophyicon} alt="" />
           </div>
@@ -330,7 +251,7 @@ const WhyUs = () => {
             <div className="whyus__col--left">
               <div className="whyus__col--left--heading">
                 <h3>
-                  We are award-winning
+                Notable Awards
                 </h3>
               </div>
               <div className="whyus__col--left--number">
@@ -341,10 +262,10 @@ const WhyUs = () => {
             </div>
             <div className="whyus__col--text">
               <p>
-                Our designers are award-winning. Our founder and CEO, Rebecca won the prestigious Royal Society of Arts SDA award, past alumni James Dyson, Sir Jony Ive, Chief Design Officer of Apple; Betty Jackson, CBE, award-winning fashion designer. Clarke, Former Head of Innovation at Nike; and Bill Moggridge, Co-founder of IDEO and designer of the first laptop
+                I won the prestigious Royal Society of Arts SDA award, past alumni James Dyson, Sir Jony Ive, Chief Design Officer of Apple; Betty Jackson, CBE, award-winning fashion designer. Clarke, Former Head of Innovation at Nike; and Bill Moggridge, Co-founder of IDEO and designer of the first laptop.
               </p>
               <p>
-                Our designers are award-winning. Our founder and CEO, Rebecca won the prestigious Royal Society of Arts SDA award, past alumni James Dyson, Sir Jony Ive, Chief Design Officer of Apple; Betty Jackson, CBE, award-winning fashion designer. Clarke, Former Head of Innovation at Nike; and Bill Moggridge, Co-founder of IDEO and designer of the first laptop
+                I’m only interested in setting the bar at the top, creating magical digital experiences that leave a “wow” impression that both convert and stand out.
               </p>
             </div>
 
